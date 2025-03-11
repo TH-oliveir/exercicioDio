@@ -22,18 +22,7 @@ Certifique-se de ter instalado:
 ### Configuração do Banco de Dados
 O projeto utiliza o Spring Data JPA para interação com o banco de dados. Para configurar a conexão, edite o arquivo `application.properties` ou `application.yml` localizado em `src/main/resources/`.
 
-**Exemplo de configuração para MySQL:**
-```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/seu_banco_de_dados
-spring.datasource.username=root
-spring.datasource.password=senha
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-
-spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
-spring.jpa.hibernate.ddl-auto=update
-```
-
-Se preferir utilizar o H2 Database para testes, configure:
+O H2 Database para testes, configure:
 ```properties
 spring.datasource.url=jdbc:h2:mem:testdb
 spring.datasource.driver-class-name=org.h2.Driver
